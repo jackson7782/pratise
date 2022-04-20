@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.PersonMapper">
+
+<!--    <resultMap id="StudentResultMap" type="com.example.demo.entity.Person">-->
+<!--        <result column="name" property="name"/>-->
+<!--        <result column="age" property="age"/>-->
+<!--        <result column="address" property="address"/>-->
+<!--        <result column="sex" property="sex"/>-->
+<!--    </resultMap>-->
+
+    <!--查询全部数据-->
+    <select id="findTotalOfPerson" resultType="int" >
+        SELECT
+       conut(1)
+        FROM person
+    </select>
+</mapper>
