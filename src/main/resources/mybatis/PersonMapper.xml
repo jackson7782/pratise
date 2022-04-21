@@ -12,7 +12,7 @@
     <!--查询全部数据-->
     <select id="findTotalOfPerson" resultType="int" >
         SELECT
-       conut(1)
-        FROM person
+       1
+        FROM dual
     </select>
 </mapper>

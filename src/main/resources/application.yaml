@@ -8,4 +8,4 @@ spring:
     dbcp2:
       driver: "com.mysql.cj.jdbc.Driver"
 mybatis:
-  config-location: classpath:Mapper/*.xml
+  mapper-locations: classpath:mybatis/*.xml
