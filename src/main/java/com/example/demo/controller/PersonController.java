@@ -15,7 +15,7 @@ public class PersonController {
     private PersonBusiness personBusiness;
 
     @GetMapping("/people")
-    public  int getAllPerson() {
+    public int getAllPerson() {
         return personBusiness.findTotalOfPerson();
     }
 }
