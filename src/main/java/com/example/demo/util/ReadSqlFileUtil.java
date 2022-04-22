@@ -16,7 +16,7 @@ public class ReadSqlFileUtil {
         String line = null;
         StringBuilder sb = new StringBuilder("");
         while ((line = reader.readLine()) != null) {
-            if (line.equals("/")) {
+            if (line.trim().equals("/")) {
                 result.add(sb.toString());
                 sb.delete(0, sb.length());
             } else {
